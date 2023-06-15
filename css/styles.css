@@ -9,6 +9,7 @@
     --our-team-bg: #F4F4FD;
     --card-border: #E7E9FC;
     --btn-border-active: transparent;
+    --border-customers: #8E8F99;
 }
 
 .visually-hidden {
@@ -160,6 +161,7 @@ button{
     border: 1px solid transparent;
     color: var(--banner-color);
     background-color: var(--active-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .card-title{
@@ -177,6 +179,12 @@ button{
 
 .header-main{
     background-color: var(--banner-bg);
+}
+
+.hero{
+    background-image: linear-gradient( to right, rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/main-bg.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .header-main button{
@@ -198,6 +206,8 @@ footer{
 
 footer .container{
     color: var(--banner-color);
+    display: flex;
+    gap: 120px;
 }
 
 .footer-link{
@@ -215,6 +225,7 @@ footer .container{
     background-color: var(--our-team-bg);
     box-sizing: border-box;
     padding: 120px 0;
+    margin-bottom: 120px;
 }
 
 .person-card {
@@ -357,11 +368,9 @@ nav{
 .person-card{
     display: flex;
     flex-direction: column;
-}
-
-.person-card{
     width: calc((100% - 72px) / 4);
     border-radius: 0 0 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .person-container{
@@ -386,6 +395,10 @@ nav{
     width: calc((100% - 48px) / 3);
 }
 
+.portfolio-card:hover, .portfolio-card:focus{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .portfolio-container{
     box-sizing: border-box;
     padding: 32px 16px;
@@ -395,4 +408,96 @@ nav{
 
 .portfolio-container .card-title{
     margin-bottom: 8px;
+}
+
+.person-container p{
+    margin-bottom: 8px;
+}
+
+.icons-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.person-icon{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: var(--btn-bg);
+    border-radius: 50%;
+    padding: 12px;
+}
+
+.person-icon svg{
+    width: 16px;
+    height: 16px;
+}
+
+.main-icon {
+    background-color: var(--btn-bg-passiv);
+    padding: 24px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+
+.main-icon svg{
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto;
+}
+
+.customers{
+    margin-bottom: 120px;
+}
+
+.customers-list {
+    display: flex;
+    gap: 24px;
+}
+
+.customers-container{
+    max-width: 168px;
+    height: 88px;
+    border: 1px solid var(--border-customers);
+    border-radius: 4px;
+    padding: 16px 32px;
+    fill: var(--border-customers);
+}
+
+.customers-container svg{
+    width: 104px;
+    height: 56px;
+}
+
+.customers-container:hover, .customers-container:focus{
+    fill: var(--active-color);
+    border: 1px solid var(--active-color);
+}
+
+.footer-social-media-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-social-media-container p{
+    margin-bottom: 16px;
+}
+
+.social-media-list{
+    display: flex;
+    gap: 16px;
+}
+
+.social-media-item{
+    width: 40px;
+    height: 40px;
+    background-color: var(--btn-bg);
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.social-media-item svg{
+    width: 24px;
+    height: 24px;
 }
