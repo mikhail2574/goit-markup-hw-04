@@ -1,0 +1,398 @@
+:root {
+    --text-color: #434455;
+    --text-bold-color: #2E2F42;
+    --active-color: #404BBF;
+    --banner-bg: #2E2F42;
+    --banner-color: #FFF;
+    --btn-bg: #4D5AE5;
+    --btn-bg-passiv: #F4F4FD;
+    --our-team-bg: #F4F4FD;
+    --card-border: #E7E9FC;
+    --btn-border-active: transparent;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    font-size: 16px;
+    background-color: var(--banner-color);
+}
+
+img{
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul{
+    margin: 0;
+}
+
+ul{
+    padding: 0;
+}
+
+
+.container{
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 107%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+.title-main{
+    color: var(--text-bold-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    margin: 0 0 72px;
+}
+
+.main-btn {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    box-sizing: border-box;
+    padding: 16px 32px;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+    min-width: 169px;
+}
+
+.main-btn:hover, .main-btn:focus {
+    background-color: var(--active-color);
+}
+
+.nav-item:hover,
+.nav-item:focus {
+    color: var(--active-color);
+}
+
+.link{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.nav-item {
+    font-weight: 500;
+    color: var(--banner-bg);
+    padding: 24px 0;
+}
+
+.logo {
+    color: var(--btn-bg);
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    line-height: 1.17;
+    margin-right: 76px;
+}
+
+.logo-black{
+    color: var(--text-bold-color);
+}
+
+button{
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+.list{
+    list-style: none;
+}
+
+.filter{
+    box-sizing: border-box;
+    padding: 96px 0 120px;
+}
+
+.filter-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
+}
+
+.portfolio-btn{
+    color: var(--btn-bg);
+    background-color: var(--btn-bg-passiv);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    box-sizing: border-box;
+    border: 1px solid var(--card-border);
+    border-radius: 4px;
+    padding: 12px 24px;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+    border: 1px solid transparent;
+    color: var(--banner-color);
+    background-color: var(--active-color);
+}
+
+.card-title{
+    font-size: 20px;            
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--banner-bg);
+}
+
+.navigation a:hover, .navigation a:active {
+    color: var(--active-color);
+    text-decoration: underline 4px solid var(--active-color);
+}
+
+.header-main{
+    background-color: var(--banner-bg);
+}
+
+.header-main button{
+    color: var(--banner-color);
+    background-color: var(--btn-bg);
+    border: none;
+}
+
+.header-main h1{
+    color: var(--banner-color);
+    margin-bottom: 48px;
+}
+
+footer{
+    background-color: var(--banner-bg);
+    padding: 100px 0;
+
+}
+
+footer .container{
+    color: var(--banner-color);
+}
+
+.footer-link{
+    display: inline-block;
+    margin-bottom: 16px;
+    text-decoration: none;
+}
+
+.logo-white {
+    color: var(--our-team-bg);
+    display: inline-block;
+}
+
+.main-team {
+    background-color: var(--our-team-bg);
+    box-sizing: border-box;
+    padding: 120px 0;
+}
+
+.person-card {
+    background-color: var(--banner-color);
+
+}
+
+.nav-address {
+    font-style: normal;
+}
+
+.nav-address a:hover,
+.nav-address a:focus {
+    color: var(--active-color);
+}
+
+.main-work{
+    padding-bottom: 120px;
+}
+
+.main-work-title, .main-team-title {
+    color: var(--banner-bg);
+}
+
+.footer-description {
+    color: var(--our-team-bg);
+    max-width: 264px;
+    padding: 0;
+    margin: 0;
+}
+
+.p-style{
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.nav-list, .address-list{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 48px;
+    margin-right: 24px;
+    outline: 1px solid var(--card-border);
+}
+
+.card:nth-child(3n){
+    margin-right: 0px;
+}
+
+.card:nth-child(n+7){
+    margin-bottom: 0;
+}
+
+.card-filter{
+    margin: 0;
+}
+
+.header-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    height: 600px;
+    padding: 188px 0;
+}
+
+.main-title{
+    max-width: 496px;
+}
+
+.cards-main{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.card-main{
+    display: flex;
+    flex-direction: column;
+    width: calc((100% - 72px) / 4);
+}
+
+.card-main-title{
+    font-size: 20px;
+    font-weight: 500;        
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--banner-bg);
+    margin: 0 0 8px;
+}
+
+.main-description{
+    padding: 120px 0;
+}
+
+.card-main-description{
+   margin: 0;
+}
+
+.doing-images{
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+}
+
+.doing-image{
+    width: calc((100% - 48px) / 3);
+}
+
+.person-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.person-card{
+    display: flex;
+    flex-direction: column;
+}
+
+.person-card{
+    width: calc((100% - 72px) / 4);
+    border-radius: 0 0 4px 4px;
+}
+
+.person-container{
+    padding: 32px 16px;
+}
+
+.person-title{
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.person-card p{
+    text-align: center;
+}
+
+.main-header{
+    border-bottom: 1px solid var(--card-border);
+    padding: 24px;
+}
+
+.portfolio-card{
+    width: calc((100% - 48px) / 3);
+}
+
+.portfolio-container{
+    box-sizing: border-box;
+    padding: 32px 16px;
+    border: 1px solid var(--card-border);
+    border-top: none;
+}
+
+.portfolio-container .card-title{
+    margin-bottom: 8px;
+}
