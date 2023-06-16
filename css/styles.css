@@ -346,12 +346,6 @@ nav{
     padding: 120px 0;
 }
 
-.description-flex{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .card-main-description{
    margin: 0;
 }
@@ -444,6 +438,9 @@ nav{
 }
 
 .main-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--btn-bg-passiv);
     padding: 24px;
     margin-bottom: 8px;
@@ -452,7 +449,6 @@ nav{
 
 .main-icon svg{
     display: block;
-    margin: 0 auto;
 }
 
 .customers{
