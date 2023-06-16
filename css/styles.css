@@ -10,6 +10,7 @@
     --card-border: #E7E9FC;
     --btn-border-active: transparent;
     --border-customers: #8E8F99;
+    --icon-active: #31d0aa;
 }
 
 .visually-hidden {
@@ -210,6 +211,8 @@ footer .container{
     color: var(--banner-color);
     display: flex;
     gap: 120px;
+    align-items: baseline;
+    margin-right: 120px;
 }
 
 .footer-link{
@@ -345,7 +348,7 @@ nav{
     padding: 120px 0;
 }
 
-.main-description.container{
+.main-description .container{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -467,9 +470,9 @@ nav{
     gap: 24px;
 }
 
-.customers-icon-link svg{
-    width: 104px;
-    height: 56px;
+.customers-container{
+    width: calc((100% - 120px) / 6);
+    height: 88px;
 }
 
 .footer-social-media-container{
@@ -484,19 +487,7 @@ nav{
 .social-media-list{
     display: flex;
     gap: 16px;
-}
-
-.social-media-item{
-    width: 40px;
-    height: 40px;
-    background-color: var(--btn-bg);
-    border-radius: 50%;
-    padding: 8px;
-}
-
-.social-media-item svg{
-    width: 24px;
-    height: 24px;
+    color: var(--banner-color);
 }
 
 .customers-icon-link{
@@ -506,14 +497,49 @@ nav{
     border: 1px solid var(--border-customers);
     border-radius: 4px;
     padding: 16px 32px;
-    fill: var(--border-customers);
     display: flex;
     align-items: center;
     justify-content: center;
+    color: var(--border-customers);
 }
 
 .customers-icon-link:hover,
 .customers-icon-link:focus {
-    fill: var(--active-color);
+    color: var(--active-color);
     border: 1px solid var(--active-color);
+}
+
+.customers-icon-link svg{
+    width: 104px;
+    height: 56px;
+    fill: currentColor;
+}
+
+.footer-social-media-container p{
+    font-weight: 500;
+}
+
+.social-media-item{
+    width: 40px;
+    height: 40px;
+}
+
+.social-media-icon-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--btn-bg);
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.social-media-icon-link:hover,
+.social-media-icon-link:focus{
+    background-color: var(--icon-active);
+}
+
+.social-media-icon-svg{
+    fill: var(--btn-bg-passiv);
 }
